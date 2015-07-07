@@ -12,7 +12,7 @@ path_to_this_repo=`pwd`
 
 stampy=`date +"%d-%m-%Y_%H-%M-%S"`
 
-for dotfile_name_in_repo in `ls | grep dot_`
+for dotfile_name_in_repo in `ls $path_to_this_repo | grep dot_`
 do
     echo "symlinking $dotfile_name_in_repo"
     dotfile_name_in_reallife=`echo $dotfile_name_in_repo | sed 's/dot_/./g'`
