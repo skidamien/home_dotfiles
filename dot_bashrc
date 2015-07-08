@@ -24,6 +24,6 @@ HISTSIZE=-1
 HISTFILESIZE=-1
 
 #Command prompt
-PS1="\e[1;35m\u@\h \w$ \e[m"
+PS1="\[\033[01;35m\]\u@\h:\[\033[01;34m\]\$PWD\[\033[01;35m\]$ \[\033[0m\]"
 
 EDITOR=emacs
